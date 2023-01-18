@@ -6,8 +6,8 @@ This project was created as part of a nutcache challenge, back end uses Entity F
 The visual part of the project is Win Forms and its only intended to interact with the back-end of the application and not serve as a basis for studying a desktop application.
 
 What you will need to run this project:
-.net 6.0
-An SQL database.
+1).net 6.0
+2) An SQL database.
 
 How to run the project:
 1) In EmployeeRegistration, check the environment variable "DefaultConnection", if necessary, change it to your local SQL server.
@@ -25,8 +25,8 @@ Este projeto foi criado como parte de um desafio da nutcache, back end usa Entit
 A parte visual do projeto é em Win Forms e tem apenas o propósito de interagir com o back end da aplicação e não serve como base de estudos de uma aplicação desktop.
 
 O que você vai precisar para rodar esse projeto:
-.net 6.0
-uma database SQL
+1) .net 6.0
+2) uma database SQL
 
 Como rodar o projeto :
 1) Em EmployeeRegistratation, verificar a variavel de ambiente "DefaultConnection", se necessário, alterar para o seu servidor local SQL.
