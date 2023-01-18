@@ -15,6 +15,12 @@ How to run the project:
 3- In the "EmployeeRegistrationGUI" folder you will find a windows forms solution, open it in visual studio and run the application.
 4- Enjoy the application :)
 
+
+
+
+____________________________________________________________________________________________________________________
+
+
 Português Brasileiro :
 
 Este projeto foi criado como parte de um desafio da nutcache, back end usa Entity Framework code first,DDD, testes unitários,Unit of Work, implementando patterns como SOLID, KISS e DRY. O projeto tem intuito educacional e pode ser usado como base para implementações de Cruds em um ambiente maior.
