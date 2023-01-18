@@ -14,7 +14,7 @@ namespace EmployeeRegistratation.Infra.Repositories
 
         public void Commit()
         {
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
     }
 }
