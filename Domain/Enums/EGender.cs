@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EmployeeRegistratation.Domain.Enums
+﻿namespace EmployeeRegistratation.Domain.Enums
 {
     public enum EGender
     {

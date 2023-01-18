@@ -45,7 +45,7 @@ namespace EmployeeRegistratation.Domain.Services
 
         public IEnumerable<Employee> GetAll()
         {
-                return _employeeRepository.GetAll();
+            return _employeeRepository.GetAll();
         }
 
         public void Delete(int id)

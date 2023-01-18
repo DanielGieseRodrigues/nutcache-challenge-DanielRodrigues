@@ -18,7 +18,7 @@ namespace EmployeeRegistration.Application.DI
             services.AddScoped(typeof(IRepository<Employee>), typeof(EmployeeRepository));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
-            services.AddScoped(typeof(IEmployeeService),typeof(EmployeeService));
+            services.AddScoped(typeof(IEmployeeService), typeof(EmployeeService));
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Domain.Exceptions;
 using EmployeeRegistratation.Domain.Enums;
-using System;
 
 namespace EmployeeRegistratation.Domain.Entities
 {
@@ -12,7 +11,7 @@ namespace EmployeeRegistratation.Domain.Entities
 
         public Employee(string name, DateTime birthDate, EGender gender, string email, string cpf, string startDate, ETeam team, int id = 0)
         {
-            EmployeeValidate(name,birthDate,email,cpf,startDate,gender);
+            EmployeeValidate(name, birthDate, email, cpf, startDate, gender);
             Name = name;
             BirthDate = birthDate;
             Gender = gender;
@@ -50,7 +49,7 @@ namespace EmployeeRegistratation.Domain.Entities
 
             if (birthDate < new DateTime(1901, 1, 1))
                 errors.Add(" Employee cant be that old!");
-            
+
             //a regex with fluent validator would be perfect for this one.
             if (!startDate.Contains('/'))
                 errors.Add(" Wrong format at start date!");

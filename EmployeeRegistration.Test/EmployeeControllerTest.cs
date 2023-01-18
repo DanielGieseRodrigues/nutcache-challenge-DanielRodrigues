@@ -1,6 +1,5 @@
 using EmployeeRegistratation.Api.DTOs;
 using EmployeeRegistratation.Controllers;
-using EmployeeRegistratation.Domain.Entities;
 using EmployeeRegistratation.Domain.Enums;
 using EmployeeRegistration.Application.Commands;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +21,7 @@ namespace EmployeeRegistration.Test
         public void Get_WhenCalled_ReturnsAllItems()
         {
             var okResult = _employeeController.Get() as OkObjectResult;
-           
+
             var items = Assert.IsType<List<EmployeeDto>>(okResult.Value);
             Assert.Equal(3, items.Count);
         }
@@ -36,9 +35,9 @@ namespace EmployeeRegistration.Test
                 CPF = "01z1a01"
             };
             _employeeController.ModelState.AddModelError("Name", "Required");
-            
+
             var badResponse = _employeeController.Post(wrongEmployeeCommand);
-           
+
             Assert.IsType<BadRequestObjectResult>(badResponse);
         }
         [Fact]
@@ -46,7 +45,7 @@ namespace EmployeeRegistration.Test
         {
             EmployeeCommand employeeTest = new EmployeeCommand()
             { Name = "Colin", BirthDate = new DateTime(1995, 2, 2), CPF = "02826467321", Email = "test72@gmail.com", Gender = EGender.Male, StartDate = "02/1998", Team = ETeam.Mobile };
-           
+
             var createdResponse = _employeeController.Post(employeeTest);
 
             Assert.IsType<OkObjectResult>(createdResponse);

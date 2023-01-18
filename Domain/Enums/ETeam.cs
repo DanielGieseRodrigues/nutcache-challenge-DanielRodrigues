@@ -1,5 +1,6 @@
 ﻿namespace EmployeeRegistratation.Domain.Enums
 {
+
     public enum ETeam
     {
         Unassigned,

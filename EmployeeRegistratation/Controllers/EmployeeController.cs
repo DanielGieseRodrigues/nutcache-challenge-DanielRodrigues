@@ -3,7 +3,6 @@ using EmployeeRegistratation.Domain.Entities;
 using EmployeeRegistratation.Domain.Services;
 using EmployeeRegistration.Application.Commands;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
 
 namespace EmployeeRegistratation.Controllers
 {
