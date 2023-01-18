@@ -6,7 +6,7 @@ This project was created as part of a nutcache challenge, back end uses Entity F
 The visual part of the project is Win Forms and its only intended to interact with the back-end of the application and not serve as a basis for studying a desktop application.
 
 What you will need to run this project:
-1).net 6.0
+1) .net 6.0
 2) An SQL database.
 
 How to run the project:
